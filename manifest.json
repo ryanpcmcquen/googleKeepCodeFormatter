@@ -4,10 +4,10 @@
 
   "name": "Google Keep code formatter",
   "description": "Makes backtick wrapped text look like code! {openSource}",
-  "version": "0.4.0",
+  "version": "0.1.0",
 
   "icons": {
-    "128": "wcf_icon.png"
+    "128": "googleKeepCodeFormatter__icon.png"
   },
 
   "content_scripts": [{
