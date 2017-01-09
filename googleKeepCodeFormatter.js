@@ -1,4 +1,4 @@
-/*! googleKeepCodeFormatter v0.1.1 by ryanpcmcquen */
+/*! googleKeepCodeFormatter v0.1.2 by ryanpcmcquen */
 //
 // Ryan P.C. McQuen | Everett, WA | ryanpcmcquen@member.fsf.org
 //
@@ -29,17 +29,25 @@
 
   window.addEventListener('load', function () {
     codeFormatter('.notranslate');
-    // syntax highlight after the markup
+    // Syntax highlight after the markup:
     PR.prettyPrint();
   });
 
-  // there are no reliable event listeners,
-  // so for now `setInterval` seems like
-  // the best option
-  setInterval(function () {
+  window.addEventListener('blur', function () {
     codeFormatter('.notranslate');
-    // syntax highlight after the markup
     PR.prettyPrint();
-  }, 200);
+  });
+  window.addEventListener('focus', function () {
+    codeFormatter('.notranslate');
+    PR.prettyPrint();
+  });
+  window.addEventListener('focusin', function () {
+    codeFormatter('.notranslate');
+    PR.prettyPrint();
+  });
+  window.addEventListener('focusout', function () {
+    codeFormatter('.notranslate');
+    PR.prettyPrint();
+  });
 
 }());
