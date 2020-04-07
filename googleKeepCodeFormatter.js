@@ -1,6 +1,6 @@
 /*! googleKeepCodeFormatter v0.2.0 by ryanpcmcquen */
 //
-// Ryan P. C. McQuen | Everett, WA | ryanpcmcquen@member.fsf.org
+// Ryan P. C. McQuen | Everett, WA
 
 /*global window, codeFormatter, PR*/
 /*jslint browser:true*/
