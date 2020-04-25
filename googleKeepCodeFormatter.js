@@ -1,4 +1,4 @@
-/*! googleKeepCodeFormatter v0.2.0 by ryanpcmcquen */
+/*! googleKeepCodeFormatter v0.3.0 by ryanpcmcquen */
 //
 // Ryan P. C. McQuen | Everett, WA
 
@@ -12,9 +12,16 @@
     var nikeIt = function () {
         codeFormatter(".notranslate");
         // Syntax highlight after the markup:
-        PR.prettyPrint();
+        // After several rejections from add-on stores
+        // complaining about files inside of Google
+        // Prettify, I have decided to remove it
+        // from this project.
+        //PR.prettyPrint();
     };
 
+    document.addEventListener("DOMContentLoaded", function () {
+        nikeIt();
+    });
     window.addEventListener("load", function () {
         nikeIt();
     });
@@ -30,5 +37,7 @@
     window.addEventListener("focusout", function () {
         nikeIt();
     });
+    
+    nikeIt();
 
 }());
