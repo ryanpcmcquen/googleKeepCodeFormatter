@@ -1,5 +1,4 @@
 {
-
     "manifest_version": 2,
 
     "name": "Google Keep code formatter",
@@ -10,16 +9,17 @@
         "128": "googleKeepCodeFormatter__icon.png"
     },
 
-    "content_scripts": [{
-        "run_at": "document_end",
-        "matches": [
-            "https://keep.google.com/",
-            "https://keep.google.com/*"
-        ],
-        "js": [
-            "assets/codeFormatter/codeFormatter.js",
-            "googleKeepCodeFormatter.js"
-        ]
-    }]
-
+    "content_scripts": [
+        {
+            "run_at": "document_end",
+            "matches": [
+                "https://keep.google.com/",
+                "https://keep.google.com/*"
+            ],
+            "js": [
+                "assets/codeFormatter/codeFormatter.js",
+                "googleKeepCodeFormatter.js"
+            ]
+        }
+    ]
 }

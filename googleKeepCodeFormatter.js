@@ -5,13 +5,11 @@
 /*global window, codeFormatter, PR*/
 /*jslint browser:true*/
 
-(function () {
+(function() {
+    'use strict';
 
-    "use strict";
-
-    var nikeIt = function () {
-        codeFormatter(".notranslate");
-        // Syntax highlight after the markup:
+    var nikeIt = function() {
+        codeFormatter('.notranslate');
         // After several rejections from add-on stores
         // complaining about files inside of Google
         // Prettify, I have decided to remove it
@@ -19,25 +17,24 @@
         //PR.prettyPrint();
     };
 
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener('DOMContentLoaded', function() {
         nikeIt();
     });
-    window.addEventListener("load", function () {
+    window.addEventListener('load', function() {
         nikeIt();
     });
-    window.addEventListener("blur", function () {
+    window.addEventListener('blur', function() {
         nikeIt();
     });
-    window.addEventListener("focus", function () {
+    window.addEventListener('focus', function() {
         nikeIt();
     });
-    window.addEventListener("focusin", function () {
+    window.addEventListener('focusin', function() {
         nikeIt();
     });
-    window.addEventListener("focusout", function () {
+    window.addEventListener('focusout', function() {
         nikeIt();
     });
-    
-    nikeIt();
 
-}());
+    nikeIt();
+})();
