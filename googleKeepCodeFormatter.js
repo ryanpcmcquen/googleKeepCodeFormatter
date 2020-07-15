@@ -1,4 +1,4 @@
-/*! googleKeepCodeFormatter v0.5.1 by ryanpcmcquen */
+/*! googleKeepCodeFormatter v0.5.2 by ryanpcmcquen */
 //
 // Ryan P. C. McQuen | Everett, WA
 
@@ -9,7 +9,7 @@
     'use strict';
 
     var nikeIt = function() {
-        codeFormatter('.notranslate');
+        codeFormatter('.notranslate[contenteditable]');
         // After several rejections from add-on stores
         // complaining about files inside of Google
         // Prettify, I have decided to remove it
