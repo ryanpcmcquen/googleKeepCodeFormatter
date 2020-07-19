@@ -1,38 +1,33 @@
-/*! googleKeepCodeFormatter v0.5.2 by ryanpcmcquen */
+/*! googleKeepCodeFormatter v0.6.0 by ryanpcmcquen */
 //
 // Ryan P. C. McQuen | Everett, WA
 
 /*global window, codeFormatter, PR*/
 /*jslint browser:true*/
 
-(function() {
+(function () {
     'use strict';
 
-    var nikeIt = function() {
+    var nikeIt = function () {
         codeFormatter('.notranslate[contenteditable]');
-        // After several rejections from add-on stores
-        // complaining about files inside of Google
-        // Prettify, I have decided to remove it
-        // from this project.
-        //PR.prettyPrint();
     };
 
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         nikeIt();
     });
-    window.addEventListener('load', function() {
+    window.addEventListener('load', function () {
         nikeIt();
     });
-    window.addEventListener('blur', function() {
+    window.addEventListener('blur', function () {
         nikeIt();
     });
-    window.addEventListener('focus', function() {
+    window.addEventListener('focus', function () {
         nikeIt();
     });
-    window.addEventListener('focusin', function() {
+    window.addEventListener('focusin', function () {
         nikeIt();
     });
-    window.addEventListener('focusout', function() {
+    window.addEventListener('focusout', function () {
         nikeIt();
     });
 
