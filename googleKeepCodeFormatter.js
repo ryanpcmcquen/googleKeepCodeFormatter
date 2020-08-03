@@ -1,4 +1,4 @@
-/*! googleKeepCodeFormatter v0.6.1 by ryanpcmcquen */
+/*! googleKeepCodeFormatter v0.6.2 by ryanpcmcquen */
 //
 // Ryan P. C. McQuen | Everett, WA
 
